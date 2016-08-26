@@ -1,10 +1,14 @@
 var React = require('react')
 
-var home = React.createClass({
+var Home = React.createClass({
   render: function () {
     var homeStyle = {
-      backgroundImage: "url('app/images/background-texture.svg')"
+      backgroundSize: 'cover',
+      backgroundImage: "url('app/images/background-texture.svg')",
+      height: '100%',
+      width: '100%'
     }
+
     return (
       <div className="container text-center" style={homeStyle}>
         <h1>Enter a City and State</h1>
@@ -23,4 +27,4 @@ var home = React.createClass({
   }
 })
 
-module.exports = home
+module.exports = Home
